@@ -2,7 +2,9 @@
 #The application of some classifier in python
 #add svm function to the plateform, just  for test!
 
-  def svc(traindata,trainlabel,testdata,testlabel):
+ 
+ def svc(traindata,trainlabel,testdata,testlabel):
+      
       print("Start training SVM...")
       svcClf = SVC(C=1.0, kernel="rbf", cache_size=600)
       svcClf.fit(traindata, trainlabel)
